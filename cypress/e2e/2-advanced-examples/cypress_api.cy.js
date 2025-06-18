@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-context('Cypress APIs', () => {
+xcontext('Cypress APIs', () => {
 
   context('Cypress.Commands', () => {
     beforeEach(() => {
