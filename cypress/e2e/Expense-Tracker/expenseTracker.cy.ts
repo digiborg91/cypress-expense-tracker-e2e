@@ -5,7 +5,7 @@ const expenseTracker = new ExpenseTrackerPage()
 
 describe('Expense Tracker E2E Tests', () => {
   beforeEach(() => {
-    cy.visit('https://track-expenses-v1.netlify.app/')
+    cy.visit('/')
   })
 
   it('should add multiple income transactions and validate balance', () => {
