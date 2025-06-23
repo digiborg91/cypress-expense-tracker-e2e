@@ -1,14 +1,14 @@
-module.exports = {
+const { defineConfig } = require('cypress')
+
+module.exports = defineConfig({
   e2e: {
-        baseUrl: 'https://track-expenses-v1.netlify.app/',
-    setupNodeEvents(on, config) {
-      // implement node event listeners here
+    baseUrl: 'https://track-expenses-v1.netlify.app/',
+    env: {
+      baseUrlReq: 'https://reqres.in/api',
+      apiKey: 'reqres-free-v1'
     },
-  },
-  e2e: {
-        baseUrlReq: 'https://reqres.in/api',
     setupNodeEvents(on, config) {
-      // implement node event listeners here
+      // node event listeners here
     },
-  },
-};
+  }
+})
